@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>JS Clock</title>
+</head>
+<body>
+
+    <div class="analog-clock hide animate__animated animate__slideInDown">
+        <div class="clock-border">
+          <div class="times one"></div>
+          <div class="times two"></div>
+          <div class="times three"></div>
+          <div class="times four"></div>
+          <div class="inner-clock">
+            <div class="arms short-arm"></div>
+            <div class="arms long-arm"></div>
+            <div class="arms seconds"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="digital-clock  animate__animated animate__slideInDown">
+              <div class="digital hours">2</div>
+              <span class="dots">:</span>
+              <div class="digital minutes">30</div>
+              <span class="dots">:</span>
+              <div class="digital digital-seconds">20</div>
+            </div>
+            <button title="CHANGE CLOCK" id="switch"></button>
+            
+<script src="index.js"></script>
+</body>
+</html>
