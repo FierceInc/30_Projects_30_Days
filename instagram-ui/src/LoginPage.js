@@ -3,6 +3,7 @@ import phones from './images/phones.png';
 import logo from './images/logo.png'
 import appstore from './images/appstore.png'
 import playstore from './images/playstore.png';
+import styled from 'styled-components';
 
 import './App.css'
 
@@ -10,11 +11,10 @@ export class LoginPage extends Component {
 
     render() {
         return (
-                  <div className="contain">
+                  <LoginContainer>
                     <div className="phones">
                         <img src={phones} alt="" />
                         <div className="slides">
-                        
                             <img id="slideImg"  src={this.props.slides} alt="" />
                         </div>
                     </div>
@@ -45,10 +45,18 @@ export class LoginPage extends Component {
                     </div>
                     </div>
                     
-                    </div> 
+                    </LoginContainer> 
 
         )
     }
 }
+const LoginContainer = styled.div`
+    width: 100vw;
+    display: flex;
+    margin: 60px auto;
+    padding: 0;
+    justify-content: center;
+    height: 100vh;
 
+`
 export default LoginPage

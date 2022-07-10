@@ -1,0 +1,345 @@
+*{
+    cursor: pointer;
+}
+.stories {
+    background-color: rgb(255, 255, 255);
+    width: 650px;
+    height: 110px;
+    margin: 20px 180px;
+    border: 1px solid rgb(228, 227, 227);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+#prof-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.home-screen{
+    margin-top: 60px;
+}
+.post-icons{
+    position: absolute;
+    left: 24px;
+    top: -15px;
+}
+.post-icons>button>img{
+    width: 25px;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+}
+.post-icons>button{
+    background: transparent;
+    border: none;
+    margin: 10px;
+}
+#save-btn>img{
+    width: 25px;
+    position: absolute;
+    right: 20px;
+    top: -11px;
+}
+#save-btn{
+    background-color: transparent;
+    border: none;
+}
+.post-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+.post-details>#likes{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#st{
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#st>#thuso:hover{
+ text-decoration: underline;
+}
+
+
+#st>p{
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -3px;
+}
+#time{
+    font-size: 10px;
+    color: rgb(168, 166, 166);
+}
+#su{
+    position: fixed;
+    right: 110px;
+    top: 60px;
+}
+.s-card {
+    background-color: rgb(255, 255, 255);
+    width: 650px;
+    height: 900px;
+    margin: 0px 180px;
+    border: 1px solid rgb(228, 227, 227);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom:10px;
+    border-radius: 4px;
+}
+.story-img>span {
+    position: absolute;
+    bottom: -16px;
+    width: 100px;
+    font-size: 12.4px;
+}
+.user-story{
+    width: 65px;
+    margin-left: 20px;
+    height: 65px;
+    position: relative;
+    border-radius: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    background-image: linear-gradient(
+        30deg,
+        rgb(255, 238, 1), 
+        rgb(170, 0, 79),
+        rgb(158, 0, 26)
+
+    );
+    z-index: 0;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.post-body{
+    width: 100%;
+}
+.post-body>img{
+    width: auto;
+    margin-left: 40px;
+    height: 100%;
+    margin-top:50px;
+}
+.comments{
+    width: 100%;
+    display: flex;
+}
+.comments>#add{
+    margin-left: 20px;
+    margin-top: 26px;
+    font-size: 13px;
+    color: slategrey;
+}
+hr{
+   border: 1px solid rgb(219, 219, 219);
+}
+.comments>#post{
+    margin-left: 400px;
+    margin-top: 26px;
+    font-size: 12px;
+    font-weight: 600;
+    color: turquoise;
+}
+.comments>button>img{
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+.comments>button{
+    background: transparent;
+    border: none;
+}
+.s-pic{
+    width: 45px;
+    margin-left: 20px;
+    height: 45px;
+    position: relative;
+    border-radius: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    background-image: linear-gradient(
+        30deg,
+        rgb(255, 238, 1), 
+        rgb(170, 0, 79),
+        rgb(158, 0, 26)
+
+    );
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-head{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: -9px;
+    margin-bottom: 15px;
+}
+#post-name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+#post-name>span{
+    font-weight: 700;
+}
+#post-name>#location{
+    font-weight: 300;
+}
+
+
+.s-img {
+    width: 37px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    background-color: rgb(180, 178, 178);
+    background-image: url('./icons/avatar3.jpg');
+    background-size: contain;
+    height:37px;
+    z-index: 1000;
+}
+.story-img {
+    width: 57px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    background-color: rgb(180, 178, 178);
+    background-image: url('./icons/avatar6.jpg');
+    background-size: contain;
+    height: 57px;
+    z-index: 1000;
+}
+
+.home-screen {
+    display: flex;
+    position: relative;
+}
+#su {}
+.side-suggestions{
+    margin: 50px 0 0 -160px;
+    width: 400px;
+    text-align: left;
+}
+.suggestions-lg {
+    display: flex;
+    text-align: left;
+}
+.prof-name {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 40px 20px 20px;
+}
+.prof-name>span{
+        font-size: 13px;
+    font-weight: 600;
+}
+.foll-name {
+    display: flex;
+    flex-direction: column;
+    margin: 6px 40px 20px 20px;
+}
+.foll-name>span{
+        font-size: 13px;
+    font-weight: 600;
+}
+.foll-name>#o-name{
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(190, 184, 184);
+}
+.foll-name>#o-name>span{
+    font-size: 11px;
+    font-weight: 700;
+    color: rgb(170, 170, 170)
+}
+.prof-name>#o-name{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(190, 184, 184);
+}
+.dots{
+    display: flex;
+    margin:20px auto;
+    width: 100%;
+    justify-content: center;
+    margin-left: -17px;
+    position: relative;
+}
+.dots>span{
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background: rgb(156, 154, 154);
+   margin: 5px;
+}
+
+
+.suggestions-lg>span {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(0, 153, 255);
+    text-align: right;
+}
+.suggestions-lg>#change {
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(0, 153, 255);
+}
+#s>#see-all{
+    color:black;
+    margin-left: 140px;
+    font-size: 13px;
+}
+#s {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgb(163, 165, 167);
+    font-weight: 600;
+}
+@media (max-width: 869px) {
+    .stories{
+        width: 100vw;
+        margin: 4px 0;
+    }
+    .comments{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .post-body>img{
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .post-details{
+        margin-bottom: 0;
+    }
+    #su {
+        display: none;
+    }
+    .s-card {
+        width: 100vw;
+        margin: 20px 10px;
+        height: 900px;
+        margin-bottom: 10px;
+    }
+}

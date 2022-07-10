@@ -13,7 +13,7 @@ function showTextNode(textNodeIndex) {
   while (optionBtn.firstChild) {
     optionBtn.removeChild(optionBtn.firstChild);
   }
-  
+
   textNode.options.forEach((option) => {
     if (showOption(option)) {
       const button = document.createElement("button");
@@ -41,11 +41,12 @@ function showOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: "This is a survival adventure game, the goal is for you to survive by making choices amoung the options you will be given. Can you Survive?",
+    text: "This is a survival adventure game, the goal is for you to survive by making choices from the options you will be given. Can you Survive?",
     options: [
       {
         text: "PLAY",
         nextText: 2
+        
       }
     ]
   },
@@ -54,10 +55,13 @@ const textNodes = [
     text: "It's mid-day you are in a forest on the ground you see three items (A Machatte, A ligher, and A fishing line), but you can only carry two items at a time.",
     options: [
       {
-        text: "Lighter and Machatte"
+        text: "Lighter and Machatte",
+        
       },
       {
-        text: "Machatte and"
+    
+        text: "Machatte and",
+        
       }
     ]
   }

@@ -2,24 +2,27 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 body{
   background: rgb(248, 247, 247);
   height: 100vh;
   width: 100vh;
+
 }
 .phones{
 position: relative;
 width: 300px;
 margin-left: -60px;
-margin-top: -20px;
+margin-top: -10px;
 }
 .contain{
   display: flex;
   width: 700px;
   padding-top:2rem ;
   margin: auto auto;
+  overflow: hidden;
 }
 .fb{
   display: flex;
@@ -54,9 +57,10 @@ margin-top: -20px;
   width: 470px;
   margin-left: 120px;
   padding: 31px;
+ overflow:visible;
 }
 .phones>img{
-  width: 460px;
+  width: 440px;
   position: relative;
   z-index: 0;
 }
@@ -64,10 +68,10 @@ margin-top: -20px;
 position: absolute;
 background: rgb(243, 243, 243);
 z-index: 1000;
-width: 247px;
-height: 438px;
-top: 98px;
-right: -98px;
+width: 239px;
+height: 418px;
+top: 93px;
+right: -82px;
 }
 .slides>img{
   width: 100%;
@@ -145,6 +149,9 @@ border-radius: 5px;
   width: 100vw;
   justify-content: space-around;
   border-bottom: 1px solid rgb(214, 216, 214);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .Icons{
@@ -212,6 +219,7 @@ border-radius: 5px;
 .loginForm{
   text-align: center;
   padding:0  15px;
+  margin-top: -60px;
   width: 330px;
   background: rgb(255, 255, 255);
   height:  390px;
@@ -229,6 +237,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+overflow: visible;
 }
 .downloadbtn{
   width: 100%;
@@ -237,7 +246,7 @@ align-items: center;
 .downloadbtn>img{
   cursor: pointer;
   width: 121px;
-  margin: 6px;
+  margin: -10px 6px;
 }
 h4{
   text-align: center;
@@ -285,19 +294,13 @@ h4{
     display: none;
   }
   .login{margin: auto;}
-  .contain {
-    height: 100vh;
-    width: 100%;
-    margin-left:auto;
-    display: flex;
-    padding: 0;
-  }
+
 .loginForm{
   margin: auto;
   width: 350px;
   background: rgb(255, 255, 255);
-  height: 410px;
-  margin-top: 20px;
+  height: 400px;
+  margin-top: -90px;
   border: 1px solid rgb(196, 194, 194);
   border-radius:3px;
 }

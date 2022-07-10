@@ -1,3 +1,5 @@
+/* eslint-disable no-unreachable */
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react'
 import './App.css';
 import LoginPage from './LoginPage';
@@ -9,11 +11,14 @@ import slide5 from './images/slide5.jpg'
 import slide6 from './images/slide6.jpg'
 import slide7 from './images/slide7.jpg'
 import Header from './Header';
-
+import UserProfile from './UserProfile';
+import ChatScreen from './ChatScreen'
+import ExploreScreen from './ExploreScreen';
+import styled from 'styled-components';
 
 export class App extends Component {
   state = {
-    page: 1,
+    page: '1',
     slide: 0
   }
   handleSlides = () => {
@@ -23,6 +28,16 @@ export class App extends Component {
     })
   
   }
+
+  handleClick = (e) => {
+
+  this.setState({
+    page: e.target.id
+  })
+  }
+
+
+
 componentDidMount() {
   setInterval(() => {
     this.handleSlides()
@@ -36,15 +51,59 @@ componentDidMount() {
 }
   render() {
     const slides = [slide1, slide2, slide3, slide4, slide5, slide6, slide7]
-    return (
-      <div style={{width:"100vw"}}>
-        <Header />
-        {/* <LoginPage  slides={slides[this.state.slide]}/>    */}
+    switch (this.state.page) {
+      case "0":
+        return (
+          <AppDiv>
+          <Header handleClick={this.handleClick} />
+          <LoginPage  slides={slides[this.state.slide]}/> 
+          </AppDiv>
+        )
+        break;
+      case '1':
+        return (
+          <AppDiv>
+          <Header handleClick={this.handleClick} />
+          <ChatScreen /> 
+          </AppDiv>
+        )
+        break;
+      case '2':
+        return (
+          <AppDiv>
+          <Header handleClick={this.handleClick} />
+           <UserProfile />
+          </AppDiv>
+        )
+        break;
+      case '3':
+        return (
+          <AppDiv>
+          <Header handleClick={this.handleClick} />
+          <ExploreScreen /> 
+          </AppDiv>
+        )
+        break;
+      case '4':
+        return (
+          <AppDiv>
+          <Header handleClick={this.handleClick} />
+          <LoginPage  slides={slides[this.state.slide]}/> 
+          </AppDiv>
+        )
+        break;
+    
+      default:
+        break;
+    }
 
-      </div>
-    )
+  
   }
 }
+const AppDiv = styled.div`
+width : 100vw
+`
+
 
 export default App
 
